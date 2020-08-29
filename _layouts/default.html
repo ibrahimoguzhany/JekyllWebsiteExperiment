@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jekyll Website</title>
+    <link rel="stylesheet" href={{ "assets/css/main.css" | relative_url }}>
+</head>
+<body>
+    <div class="title-area">
+
+        <a href="{{ "/index.html" | relative_url }}">"
+        <img src= {{ "assets/images/logo.png" | relative_url }} class="logo">
+        </a>
+
+
+     <h1 class="title"> {{ page.title }}  </h1>  
+     <p class="subtitle"> {{ page.description }} </p>
+    </div>
+
+    {{ content }}
+    
+
+    <footer>
+    <p>Social media accounts and other stuff will appear in here! </p>    
+    </footer>
+    
+</body>
+</html>
